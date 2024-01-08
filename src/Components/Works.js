@@ -15,7 +15,7 @@ const Works = () => {
       <section id="works">
           <h2 className="worksTitle">My Portfolio</h2>
       <span className="worksDesc">I take pride in creating reliable and user-friendly software</span>
-      {loading && <div>Loading portfolio image links...</div>}
+      {loading && <div className="portfolio-links">Loading portfolio image links...</div>}
       {loading ? <div>
         <ClipLoader
         color={"#daa520"}

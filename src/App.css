@@ -149,6 +149,10 @@ nav.navbar {
     /* z-index:2; */
     
 }
+.portfolio-links{
+    font-size:2rem;
+    color:goldenrod;
+}
 
 .profileImg {
     position: absolute;
