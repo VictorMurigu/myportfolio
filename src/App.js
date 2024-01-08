@@ -5,12 +5,12 @@ import Skills from "./Components/Skills";
 import Works from "./Components/Works";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-import { useState } from "react";
+
 
 
 
 function App() {
-	const [loading, setLoading] = useState(true);
+	
 	return (
 		<div className="main">
 			<Navbar className="nav" />
