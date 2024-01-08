@@ -1,0 +1,139 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    background: transparent;
+}
+body {
+    background:rgb(30,30,30);
+    color:white;
+    overflow: hidden;
+}
+.main{
+    position: relative;
+}
+/* #root{
+    position: relative;
+} */
+
+
+
+.navbar {
+    /* background: white; */
+    height: 5rem;
+    width: 95vw;
+    margin: 0 auto;
+    padding: 3rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    top:0;
+    right:0;
+
+    /* box-shadow: 0 2.98px 7.456px rgba(0, 0, 0, 0.1); */
+}
+
+.logo {
+    height: 77px;
+    width: 77px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 0.35rem;
+    max-width: 100px;
+}
+
+.desktopMenuList {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+.desktopMenuBtn {
+    padding-right: 0.75rem;
+    background: #fff;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+}
+
+.desktopMenuImg {
+    object-fit: cover;
+    margin: 0.2rem;
+    color: black;
+    height: 33px;
+    border-radius: 50%;
+}
+
+.briefcase {
+    object-fit: cover;
+    margin: 1rem;
+    height: 1.25rem;
+    width: 1.25rem;
+
+}
+
+#intro {
+    height: calc(100vh-5rem);
+    width: 100vw;
+    max-width: 75rem;
+    color: white;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.profileImg {
+    position: absolute;
+    z-index: 1;
+    top: 4.25rem;
+    object-fit: cover;
+    right: 0;
+
+    height: 35vh;
+    /* width: 35; */
+
+}
+
+.introContent {
+    height: 70vh;
+    width: 100vw;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+
+
+.introName {
+    color: goldenrod;
+    font-weight: 900;
+
+}
+
+.introParagraph {
+    font-size: medium;
+    font-weight: 100;
+}
+
+.btn {
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 2rem;
+    border: 2px solid white;
+    color: green;
+}

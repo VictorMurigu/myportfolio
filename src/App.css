@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    background: transparent;
+    overflow:hidden;
+    overflow-y: inherit;  
+      
+}
+/* body{
+    position: relative;
+} */
+.nav{
+    position: absolute;
+    z-index: 3;
+}
+#root{
+   position: absolute;
+}
+
+.main {
+    background: rgb(30, 30, 30);
+    color: white;
+    list-style-type: none;
+        text-decoration: none;
+    overflow:hidden;
+    overflow-y: inherit;
+    z-index: 3;
+   
+
+}
+nav.navbar {
+    background:rgb(30, 30, 30);
+    height: 5rem;
+    width: 95vw;
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:1;
+    box-shadow: 0 2.98px 7.456px rgba(0, 0, 0, 0.1);
+   
+   
+}
+
+.menu{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display:none;
+    object-fit: cover;
+    z-index:100;
+    
+
+}
+.navMenu{
+    position:absolute;
+    top:1rem;
+    right: 1rem;
+    z-index:1;
+    display: flex;
+    flex-direction: column;
+    padding:0.5rem;
+    height:15rem;
+    min-width:5rem;
+    background: rgb(40,40,40);
+    border-radius: 1rem;
+    cursor:pointer;
+    
+}
+.menuList{
+    color:white;
+    padding:0.2rem 3rem;
+    margin:0.25rem;
+    text-decoration: none;
+    background: rgb(30, 30, 30);
+    z-index: 100;
+    
+    
+}
+
+.active{
+    color:yellow;
+    border-bottom: 2px solid yellow;
+    padding-bottom:0.1rem;
+} 
+
+.logo {
+    height: 77px;
+    width: 77px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 0.35rem;
+    max-width: 100px;
+}
+.desktopMenu{
+    z-index: 100;
+}
+
+.desktopMenuList {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 2px 5px;
+    cursor: pointer;
+}
+
+.desktopMenuBtn {
+    padding-right: 0.75rem;
+    background: #fff;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+}
+
+.desktopMenuImg {
+    object-fit: cover;
+    margin: 0.2rem;
+    color: black;
+    height: 23px;
+    border-radius: 50%;
+}
+
+
+.hire-Btn{
+    background:white;
+    color:green;
+    height:2.5rem;
+    width:10rem;
+    font-size:1rem;
+    cursor:pointer; 
+    align-items: center;
+    text-align: center;
+    border-radius: 1.5rem;;
+}
+
+#intro {
+    height: 100vh;
+    width: 100vw;
+    max-width: 75rem;
+    color: white;
+    margin: 0 auto;
+    overflow: hidden;
+    /* z-index:2; */
+    
+}
+
+.profileImg {
+    position: absolute;
+    z-index:-1;
+    top: 7rem;
+    object-fit: cover;
+    right:2rem;
+    /* left:60%; */
+    /* transform:translateX(-20%); */
+    background: transparent;
+    /* border:2px solid green; */
+    border-radius:50%;
+
+    height: 72%;
+    /* width: 35; */
+
+}
+#intro{
+    min-height: calc(100vh-5rem);
+        width: 100vw;
+        font-size: 2rem;
+        padding: 1rem;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+     
+
+
+}
+.introProfile{
+    color:goldenrod;
+}
+
+.introContent {
+    height: 70%;
+    width: 100vw;
+    font-size: 3rem;
+    padding: 1rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position:absolute;
+    top:10rem;
+  
+   
+}
+
+.hello {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+ .introText {
+     font-size:3.75rem;
+ } 
+
+.introName {
+    font-size:3.75rem;
+    color: goldenrod;
+    font-weight: 900;
+
+}
+
+.introParagraph {
+    font-size:1rem;
+    font-weight: 300;
+}
+
+button .btn {
+   
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 2rem;
+    border: 2px solid white;
+    color: green;
+}
+#skills{
+    min-height:calc(100vh-6rem);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    max-width: 65rem;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    margin:0 auto;
+    
+}
+.skillTitle{
+    font-size:2.25rem;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    margin-bottom:0.5rem;
+}
+.skillDesc{
+    font-weight: 300;
+    font-size: 1rem;
+    max-width: 50rem;
+    padding:0 2rem;
+}
+.skillBars{
+    margin:1.5rem;
+    width:100vw;
+    max-width: 80%;
+    text-align: left;
+}
+.skillBar{
+    display:flex;
+    margin:1rem;
+    padding:1.5rem 2rem;
+    background: rgb(50,50,50);
+    border-radius:0.5rem;
+    align-items: center;
+   
+
+}
+.skillBarImg{
+    object-fit: cover;
+    height:100px;
+    width: 100px;
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+}
+@media screen and (max-width:480px){
+    .skillBarText{
+        font-size: 3vw;
+    }
+    .skillBarImg{
+        height:77px;
+        width:77px;
+        border-radius: 0.5rem;
+    }
+    .skillBarText{
+        font-size:5vw;
+    }
+}
+#works{
+    min-height: calc(100vh-5rem);
+    width:100vw;
+    max-width:65rem;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding:0 1rem;
+}
+.worksTitle{
+    margin:1rem 0;
+    font-size:3rem;
+}
+.worksDesc{
+    font-weight: 300;
+    font-size:1rem;
+}
+.worksImgs{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 65rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.worksImg{
+    object-fit: cover;
+    height:10rem;
+    width: 15rem;
+    margin:0.5rem;
+}
+.worksBtn {
+    padding: 0.5rem 1.5rem;
+    margin:1.5rem auto;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    background: white;
+}
+.worksBtnLink {
+    text-decoration: none;
+}
+
+#contacts{
+    width: 100vw;
+    max-width: 65rem;
+    padding-top: 6rem;
+}
+#contactPage{
+    min-height: calc(100vh-5rem);
+    width: 100vw;
+    max-width: 65rem;
+    margin:0 auto;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    padding:0 1rem;
+}
+.clientImgs{
+    margin:1rem 0;
+    flex-wrap: wrap;
+}
+.clientImg{
+    object-fit: cover;
+        height: 7rem;
+        width: 10rem;
+        margin: 0.5rem;
+        min-width: 9rem;
+}
+.contactDesc{
+    padding:1rem;
+    font-size: 0.85rem;
+    font-weight: 100;
+}
+.contactForm{
+    margin:1rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width:85vw;
+    max-width: 65rem;
+    border:none;
+}
+.name, .email, .msg{
+    font-size: medium;
+    width: 100%;
+    margin:0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.5rem;
+    max-width: 65rem;
+    margin:0.5rem 0.5rem;
+    color:white;
+    border:none;
+    border-radius: 0.5rem;
+    background:rgb(40,40,40)
+}
+.submitBtn{
+    margin:1rem;
+    padding:0.5rem 0.75rem;
+    border:none;
+    border-radius:0.5rem;
+    background:#fff;
+    text-align: center;
+    font-size: small;
+}
+
+.social-links{
+    margin:1rem 2.5rem;
+    padding:1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.link{
+    object-fit: cover;
+    height:2rem;
+    width: 2rem;
+    margin:0 0.75rem;
+    border-radius: 50%;
+}
+#footer{
+    width: 100vw;
+    height:4rem;
+    background: rgb(40,40,40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    font-weight: 300;
+    font-size: small;
+    
+}
+@media screen and (max-width:450px){
+    .contactDesc {
+            padding: 0.5rem;
+            font-size: 0.5rem;
+            font-weight: 100;
+        }
+        /* .contactForm{
+            width:100vw;
+            max-width:40rem ;
+        } */
+                .social-links {
+                    margin: 0.75rem 1rem;
+                    padding: 1rem;
+                }
+}
+
+
+
+@media screen and (max-width:720px) {
+    .menu {
+        display: flex;
+        z-index: 1;
+    }
+        nav.navbar {
+            padding: 0.5rem;
+            height:15rem;
+            z-index:1;
+           
+                width: 90vw;
+                margin: 0 auto;
+                padding: 0.5rem 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: fixed;
+                top: 0;
+                right: 2rem;
+        }
+        .navMenu{
+            height: max-content;
+            z-index: 3;
+
+        }
+   
+
+    .desktopMenu {
+        display: none;
+    }
+
+    .desktopMenuBtn {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:550px) {
+    .worksImg {
+        height: 5rem;
+        width: 10rem;
+    }
+
+    .worksBtn {
+        font-size: 0.75rem;
+
+    }
+}
+
+
+@media screen and (max-width:440px) {
+    .profileImg{
+        right:-10vw;
+    }
+    .introContent{
+        font-size:0.75rem;
+        font-weight: 200;
+    }
+        .desktopMenuImg {
+            margin: 0.1rem;
+            color: black;
+            height: 23px;
+            border-radius: 50%;
+        }
+        .desktopMenuBtn {
+            padding-right: 0.25rem;        
+        }
+}
