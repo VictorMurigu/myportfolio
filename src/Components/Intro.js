@@ -35,7 +35,7 @@ const Intro = () => {
                 
             </div>
      {loading ? <div>
-        <PulseLoader sizeUnit={"px"} size={8} color={"#daa520"} loading={true} /></div> : <div><img src="./images/opt-portfolioimg2.jpeg" alt="profile" className="profileImg"/> </div>}   
+        <PulseLoader sizeUnit={"px"} size={8} color={"#daa520"} loading={loading} /></div> : <div><img src="./images/opt-portfolioimg2.jpeg" alt="profile" className="profileImg"/> </div>}   
       </section>
    
   )

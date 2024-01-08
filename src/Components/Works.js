@@ -18,9 +18,9 @@ const Works = () => {
       {loading && <div>Loading images...</div>}
       {loading ? <div>
         <ClipLoader
-        color={"#0000FF"}
+        color={"#daa520"}
         loading={loading}
-        size={50}
+        size={60}
         aria-label="Loading Spinner"
         data-testid="loader"
       />

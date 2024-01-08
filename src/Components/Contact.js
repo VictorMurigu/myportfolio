@@ -37,7 +37,7 @@ const Contact = () => {
               </p>
               {loading ? <div>
         <ClipLoader
-        color={"#0000FF"}
+        color={"#daa520"}
         loading={loading}
         size={50}
         aria-label="Loading Spinner"
