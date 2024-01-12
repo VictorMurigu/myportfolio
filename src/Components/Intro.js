@@ -14,21 +14,26 @@ const Intro = () => {
     },3000)
   },[])
 
-
-
+  if (loading) {
     return (
-      <section id="intro">
-
+      <main>
         {loading && <div className="content-page">Loading Content page...</div>}
         {loading && <div>
           <ClipLoader
             color={"#daa520"}
             loading={loading}
-            size={60}
+            size={50}
             aria-label="Loading Spinner"
             data-testid="loader"
           />
         </div>}
+    </main>
+  );
+}
+
+  return (
+      
+      <section id="intro"> 
             <div className="introContent">
                 <span className="hello">Hello, </span>
                 <span className="introText">I'm
