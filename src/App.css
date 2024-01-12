@@ -153,6 +153,10 @@ nav.navbar {
     font-size:2rem;
     color:goldenrod;
 }
+.content-page{
+    font-size: 2rem;
+    color: goldenrod;
+}
 
 .profileImg {
     position: absolute;

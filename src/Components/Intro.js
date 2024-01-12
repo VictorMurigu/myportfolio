@@ -1,6 +1,7 @@
 import { Link } from 'react-scroll';
 import { useState, useEffect } from "react";
 import PulseLoader from "react-spinners/PulseLoader";
+import ClipLoader from "react-spinners/ClipLoader";
 
 
 const Intro = () => {
@@ -17,6 +18,17 @@ const Intro = () => {
 
     return (
       <section id="intro">
+
+        {loading && <div className="content-page">Loading Content page...</div>}
+        {loading && <div>
+          <ClipLoader
+            color={"#daa520"}
+            loading={loading}
+            size={60}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        </div>}
             <div className="introContent">
                 <span className="hello">Hello, </span>
                 <span className="introText">I'm
